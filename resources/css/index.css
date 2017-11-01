@@ -42,53 +42,56 @@ nav span {
   padding: 15px;
 }
 
-.banner {
+#banner {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   background-image: url("../images/img-mission-background.jpg");
   height: 700px;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .text {
   background-color: black;
-  color: white;
-  text-align: center;
   width: 100%;
 }
 
-.middle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+#middle {
+  display: block;
   margin: 0 auto;
-  width: 100%;
+  max-width: 1000px;
+  min-height: 700px;
   padding-top: 70px;
-}
-
-.totm {
-  width: 100%;
+  padding-bottom: 10px;
 }
 
 .teas {
   display: flex;
-  flex-flow: row wrap;
-  width: 1000px;
-  justify-content: space-around;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.product {
+  display: block;
+  padding: 5px;
 }
 
 .product img {
   height: 200px;
-  max-width: 300px;
-  padding-bottom: 10px;
+  width: 300px;
+  margin: 10px;
 }
 
-.cafe {
+.product h4 {
+  margin: 0px;
+  padding: 5px;
+}
+
+#cafe {
   background-image: url("../images/img-locations-background.jpg");
-  height: 500px;
+  min-height: 500px;
   max-width: 1200px;
   margin: 0 auto;
   display: block;
@@ -102,7 +105,9 @@ nav span {
 
 .addresses {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
+  max-width: 100%;
+  min-width: 400px;
   justify-content: center;
 }
 
@@ -111,7 +116,7 @@ nav span {
   opacity: 1;
   background-color: black;
   padding: 10px;
-  margin: 0px 20px;
+  margin: 20px;
 }
 
 .location h3 {
@@ -129,7 +134,7 @@ nav span {
 }
 
 .footer h2 {
-  padding: 10px;
+  padding: 30px 10px 10px 10px;
   margin: 0;
 }
 
@@ -152,4 +157,15 @@ body {
   opacity: 0.9;
   text-align: center;
   background-color: black;
+  font-size: 22px;
+}
+
+/* unvisited link */
+a:link {
+    color: seashell;
+}
+
+/* visited link */
+a:visited {
+    color: seashell;
 }
